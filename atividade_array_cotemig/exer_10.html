@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 10</title>
+</head>
+<body>
+    <script>
+       var vet1 = [], entrada = 1, vetNegativo = [], qtd = 0
+
+        while(entrada!=0){
+        vet1.push(parseInt(prompt("Digite um número")))
+        entrada=prompt("Digite qualquer numeor pra continuar ou 0 pra finalizar")
+        }
+
+        for(i=0;i<vet1.length;i++){
+            if(vet1[i]<0){
+            vetNegativo.push(vet1[i]);
+            qtd++
+        }
+       
+        }
+
+        console.log(vetNegativo)
+        console.log(qtd)
+    </script>
+</body>
+</html>

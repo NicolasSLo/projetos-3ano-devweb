@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 6</title>
+</head>
+<body>
+    <script>
+         const produtos = [
+            { id: 1, categoria: 'limpeza', name: 'Amaciante' },
+            { id: 2, categoria: 'limpeza', name: 'Detergente' },
+            { id: 3, categoria: 'alimento', name: 'ovo' },
+            { id: 4, categoria: 'alimento', name: 'alface' },
+            ]
+
+            const idsAlimentos = produtos.filter(p => p.categoria === 'alimento') 
+            .map(p => p.id);
+
+            console.log(idsAlimentos)
+    </script>
+</body>
+</html>

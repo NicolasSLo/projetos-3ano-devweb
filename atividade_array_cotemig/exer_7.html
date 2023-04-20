@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 7</title>
+</head>
+<body>
+    <script>
+        const produtos = [{
+            nome: 'Placa De Vídeo',
+            preço: 400
+            }, {
+            nome: 'SSD',
+            preço: 950
+            }, {
+            nome: 'CPU',
+            preço: 500
+            }];
+
+          
+            const produtosDesconto = Object.keys(produtos).map(key => produtos[key]['preço'] *= 0.9);
+              
+              //produtos.map(item=>(item.preço*0.1)-(item.preço));
+            
+            console.log(produtosDesconto)
+    </script>
+</body>
+</html>

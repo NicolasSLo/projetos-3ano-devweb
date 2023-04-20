@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let valor = prompt('Digite um numero de 1 a 5')
+
+    if (valor == 1){
+        let nome = prompt('digite seu nome: ')
+        let salario = prompt('seu salario: ')
+
+        conta = salario * 1.1
+
+        alert('Seu nome é: '+ nome)
+        alert('Seu salario com 10% é: '+ conta)
+    }
+
+
+
+    else if (valor == 2){
+        var valorA = parseInt(prompt('digiteo valor A: '))
+        var valorB = parseInt(prompt('digite o valor B: '))
+
+        if (valorA == valorB) {
+            conta = valorA + valorB
+            alert('Os valores somados = '+ conta)
+        } 
+        else {
+            conta = valorA * valorB
+            alert('Os valores multiplicados = '+ conta)
+        }
+    }
+
+
+
+    else if (valor == 3){
+        let produto = 100
+        let parcela = prompt('Digite o numero de parcelas (3 ou 5): ')
+
+        if(parcela == 3){
+            alert('Valor do produto: '+ produto*1.10)
+        }
+        else if (parcela == 5){
+            alert('Valor do produto: '+ produto*1.20)
+        }
+        else {
+            alert('Valor Invalido')
+        }
+    }
+
+
+
+    else if (valor == 4){
+        let nome = prompt('Digite seu nome: ')
+        var nota1 = parseInt(prompt('Nota 1: '))
+        var nota2 = parseInt(prompt('Nota 2: '))
+        var nota3 = parseInt(prompt('Nota 3: '))
+
+        soma = nota1 + nota2 + nota3
+
+        alert ('Seu nome é: '+ nome)
+        if(soma < 7){
+            alert('Reprovado | nota: '+ soma)
+        }
+        else {
+            alert('Aprovado | nota: '+ soma)
+        }
+    }
+
+
+
+    else if (valor == 5){
+        var num = prompt('Digite um número de 1 a 12')
+
+        if (num == 1){
+            alert('Janeiro')
+        }
+        else if (num == 2){
+            alert('Fevereiro')
+        }
+        else if (num == 3){
+            alert('Março')
+        }
+        else if (num == 4){
+            alert('Abril')
+        }
+        else if (num == 5){
+            alert('Maio')
+        }
+        else if (num == 6){
+            alert('Junho')
+        }
+        else if (num == 7){
+            alert('Julho')
+        }
+        else if (num == 8){
+            alert('Agosto')
+        }
+        else if (num == 9){
+            alert('Setembro')
+        }
+        else if (num == 10){
+            alert('Outubro')
+        }
+        else if (num == 11){
+            alert('Novembro')
+        }
+        else if (num == 12){
+            alert('Dezembro')
+        }
+        else {
+            alert('Valor Invalido')
+        }
+        
+    }
+
+
+
+    else {
+        alert('Valor Invalido')
+    }
+    
+    
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/statics/style.css">
+    <title>Pesquisar</title>
+</head>
+<body>
+<form onsubmit="window.location = /users/ + search.value; return false;" method="get">
+    
+        <div class="box"> 
+            <h1>Pesquisar</h1>
+            <div>
+                <p>Nome:</p>
+                <input type="text" id="search" name="search" required>
+            </div>
+            <button type="submit" id="btn_search">Search</button>
+        </div>
+
+        
+</form>    
+</body>
+</html>

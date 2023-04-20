@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <main class="cadastro">
+
+        <div class="box">
+            <fieldset class="field">
+                <legend>Cadastro</legend>
+
+                
+                    <div class="elemento">
+                        <h3>Digite o nome do produto:</h3>
+                        <input type="text" id="produto" placeholder="Nome do produto">
+                    </div>
+
+                    <div class="elemento">
+                        <h3>Digite a quantidade:</h3>
+                        <input type="number" id="qtdproduto" placeholder="Quantidade">
+                    </div>
+
+                    <div class="elemento">
+                        <h3>Digite o valor:</h3>
+                        <input type="number" id="valor" placeholder="Valor do produto">
+                    </div>
+
+                <div class="box_btn">
+                    <input type="submit" onclick="produto.salvar()"
+                    id="botao" value="Salvar"/>
+                </div>
+
+                <div class="linha"></div>
+
+                <table border="1" cellspacing="0" bordercolor="black">
+                    <thead class="header_table">
+                        <th>ID</th>
+                        <th>Produto</th>
+                        <th>Valor</th>
+                        <th>Quantidade</th>
+                        <th>Ações</th>
+                    </thead>
+                    
+                    <tbody id="tbody">
+                     
+                    </tbody>
+
+
+
+
+
+
+                </table>
+                
+
+            </fieldset>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+<script src="estoque.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+:root {
+  display: grid;
+  justify-content: center;
+  font-family: arial;
+  font-size: 20px;
+  background: linear-gradient(to right, rgb(35, 21, 35), rgb(55, 34, 55), rgb(35, 21, 35));
+  color: white;
+  margin-top: 100px;
+}

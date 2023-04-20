@@ -1,0 +1,129 @@
+:root{
+  /* background: linear-gradient(to right, rgb(37, 83, 63), rgb(68, 195, 140), rgb(37, 83, 63)); */
+  /* background: linear-gradient(to right, rgb(0, 43, 54), rgb(0, 108, 138), rgb(0, 43, 54)); */
+  background: linear-gradient(to right, black,#0e0422, #320d32,#0e0422, black);
+  color: black;
+  display: grid;
+  justify-content: center;
+  font-family: Arial;
+  overflow-x: hidden;
+}
+*{
+  margin: 0px;
+}
+.countTela2{
+  display: grid;
+  text-align: left;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 20px;
+  padding: 8px 15px;
+  border-radius: 7px;
+  /* border: 1px solid rgba(255, 255, 255, 0.364); */
+  /* background: linear-gradient(55deg, rgb(99, 232, 190), rgb(55, 255, 0)); */
+  background: linear-gradient(35deg, black, rgb(39, 0, 65));
+  /* backdrop-filter: blur(3px); */
+  color: white;
+  width: 230px;
+  z-index: 2;
+}
+
+.border{
+  background: linear-gradient(35deg, black, rgb(39, 0, 65));
+  padding: 2px;
+  border-radius: 7px;
+  box-shadow: 5px 5px 2px 0 rgba(0, 0, 0, 0.356);
+  position: relative;
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  animation: slide 1.2s ease;
+}
+@keyframes slide{
+  0%{
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  50%{
+    transform: translateY(25px);
+    opacity: 5;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 10;
+  }
+}
+
+.border::before{
+  content: '';
+  position: absolute;
+  height: 500px;
+  width: 70px;
+  justify-self: center;
+  background: white;
+  z-index: 1;
+  animation: rotate 3s infinite linear;
+}
+@keyframes rotate {
+  100%{
+    transform: rotate(360deg)
+  }
+}
+
+.countTela2 h1{
+  filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+}
+.countTela2 img{
+  filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+  filter: invert();
+}
+
+.blur{
+  /* background: rgba(0, 0, 0, 0.378); */
+  /* backdrop-filter: blur(6px); */
+  animation: blur 1.2s forwards ease;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  row-gap: 30px;
+  color: white;
+}
+@keyframes blur {
+  0%{
+    backdrop-filter: blur(0px);
+  }
+  to{
+    backdrop-filter: blur(8px);
+  }
+}
+
+.blur button:hover{
+  cursor: pointer;
+  width: 260px;
+}
+
+.slide{
+  display: grid;
+  row-gap: 20px;
+  animation: opacity 1.5s ease forwards;
+  opacity: 0;
+  animation-delay: 1.2s;
+}
+@keyframes opacity {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 5;
+  }
+  100%{
+    opacity: 10;
+  }
+}

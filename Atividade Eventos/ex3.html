@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background:rgb(53, 53, 53) ;
+            display: grid;
+            justify-items: center;
+            padding-top: 100px;
+            row-gap: 50px;
+            text-align: center;
+        }
+        div{
+            background: rgb(83, 83, 83);
+            height: 400px;
+            width: 400px;
+            display: grid;
+            justify-items: center;
+            align-items: center ;
+            box-shadow: 0px 0px 30px;
+            padding-bottom: 30px;
+        }
+        h3{
+            font-family: arial;
+            color: white;
+            font-size: 1.5em;
+        }
+        #seletor{
+            background: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: solid white 2px;
+            position: relative;
+            transform: translateY(-40px);
+            width: 150px;
+            transition: 0.3s;
+            outline: none;
+        }
+        option{
+            color: black;
+            
+        }
+        #seletor:hover, #seletor:focus{
+            width: 222px;
+        }
+
+
+       
+    
+    </style>
+</head>
+<body id="body">
+
+    <div>
+        <h3>Escolhe uma cor para mudar o fundo</h3>
+        
+        <select id="seletor" onchange="cor()">
+            <option value="default" selected>Selecione...</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="verde">Verde</option>
+            <option value="azul">Azul</option>
+            <option value="amarelo">Amarelo</option>
+        </select>
+
+    </div>
+
+
+    
+
+    <script>
+       function cor (){
+           let selectCor = document.getElementById('seletor').value
+
+           if(selectCor == 'vermelho'){
+                document.querySelector('body')
+                .style.background = "rgb(243, 69, 69)"
+
+           } else if (selectCor == 'verde'){
+                document.querySelector("body")
+                .style.background = "rgb(46, 175, 46)"
+
+           } else if (selectCor == 'azul'){
+                document.querySelector("body")
+                .style.background = "rgb(0, 192, 206)"
+
+           } else if (selectCor == 'amarelo'){
+                document.querySelector("body")
+                .style.background = "yellow"
+
+           } else if (selectCor == 'default'){
+            document.querySelector("body")
+            .style.background = "rgb(53, 53, 53)"
+           }
+
+       }
+    </script>
+
+
+</body>
+</html>

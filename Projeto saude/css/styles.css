@@ -1,0 +1,47 @@
+body{
+    color: white;
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    background: rgb(30, 39, 28);
+}
+.cabecalho{
+    background-color: rgb(56, 112, 42);
+    color: white;
+}
+.quadrado{
+      padding: 10px;
+    border: 2px solid rgb(56, 112, 42);
+}
+td{
+    padding: 10px;
+    border: 2px solid rgb(56, 112, 42);
+}   
+ul,li{
+    list-style-type: none;
+}
+.clickable{
+    cursor:pointer;
+    
+}
+td{
+    background-color:  rgb(56, 112, 42);;
+    transition: 0.3s;
+}
+td:hover{
+    cursor:pointer;
+    background-color:  rgb(22, 48, 16);;
+    filter: drop-shadow(0 0 30px rgb(56, 112, 42));
+}
+
+
+.deleteButton{
+    background-color:rgb(127, 255, 212);
+    color:white;
+    font-weight: bold;
+    background-color: darkred;
+    margin-right: 10px;
+    border-radius: 50%;
+}

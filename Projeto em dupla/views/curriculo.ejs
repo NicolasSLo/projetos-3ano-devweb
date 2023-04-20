@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/styles/main2.css' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+    <div id="div1">
+      <h1><%= title %></h1>
+      <p>Bem vindo(a) ao <strong><%= title %></strong></p>
+      <strong><%= name %></strong>
+      <p><%= profession %></p>
+    </div>
+      
+      <div id="div2">
+      <p>Esperiencia com front</p>
+      <ul>
+      <% experience.map(experience => { %>
+          <li>
+              <div>
+                  <strong><%= experience.company %>:</strong>
+                  <strong><%= experience.office %></strong>
+                  <br>
+                  <span><%= experience.description %></span>
+              </div>
+          </li>
+      <% }); %>
+      </ul>
+      <ul>
+      <% education.map(education => { %>
+          <li>
+              <div>
+                  <strong><%= education.institution %></strong>
+                  <br>
+                  <span><%= education.description %></span>
+              </div>
+          </li>
+      <% }); %>
+      </ul>
+      <ul>
+      <% skills.map(skill => { %>
+          <li><%= skill %></li>
+          
+      <% }); %>
+      </ul>
+    </div>
+    </main>
+  </body>
+</html>

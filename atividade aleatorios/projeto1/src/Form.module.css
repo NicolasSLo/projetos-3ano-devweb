@@ -1,0 +1,60 @@
+.all{
+    display: grid;
+    background: rgb(77, 48, 78);
+    padding: 20px;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 5px;
+    row-gap: 20px;
+    width: 300px;
+}
+
+.all2{
+    display: grid;
+    row-gap: 20px;
+}
+.form{
+    display: grid;
+    justify-items: center;
+    padding: 20px;
+    row-gap: 20px;
+    border-radius: 8px;
+    background: rgb(104, 60, 105);
+    box-shadow: 0 3px 3px rgba(0,0,0,.1)
+}
+.result{
+    display: grid;
+    justify-items: center;
+    background: rgb(104, 60, 105);
+    min-height: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 3px rgba(0,0,0,.1);
+    padding: 5px 20px;
+}
+
+button{
+    width: 200px;
+    height: 30px;
+    background: none;
+    color: white;
+    border: rgb(51, 207, 51) 1px solid;
+    border-radius: 100px;
+    outline: none;
+    transition: 0.5s;
+}
+button:hover{
+    background: rgb(51, 207, 51);
+    width: 300px;
+    cursor: pointer;
+    outline: none;
+    filter: drop-shadow(0px 0px 10px rgb(51, 207, 51));
+}
+
+input{
+    height: 40px;
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px rgba(0,0,0,.1);
+    outline: none;
+    padding: 10px;
+}

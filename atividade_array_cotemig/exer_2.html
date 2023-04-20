@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 2</title>
+</head>
+<body>
+    <script>
+        var vet1 = [], vet2=[], x = 0, concatenado=[]
+
+        while(x<=3){
+            vet1.push(parseInt(prompt("Digite um número")))
+            vet2.push(parseInt(prompt("Digite outro número")))
+            x++
+        }
+
+        //concatenar
+         concatenado = vet1.concat(vet2)
+
+
+        console.log(vet1,vet2)
+        console.log(concatenado)
+         var ordenado=[]
+         
+        //ordem crescente 
+           ordenado=concatenado.sort((a,b)=>(a-b))
+
+           concatenado.log(ordenado)
+
+//excluir maior e menor
+               var menor=ordenado.shift()
+               var maior=ordenado.pop()
+        
+
+        console.log("vetor final : "+ordenado)
+
+        verifica = parseInt(prompt("digite um numero para verficar se ele existe no array"))
+
+        let a = contatenado.indexOf(verifica,0) // pesquisa o se existe o valor dentro do vetor
+        
+        
+        if (a>=0){
+            console.log("valor existe no vetor concatenado")
+            
+        }
+        else{
+            alert("Valor não existe no vetor concatenado")
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background:rgb(53, 53, 53) ;
+            display: grid;
+            justify-items: center;
+            padding-top: 100px;
+            row-gap: 50px;
+            text-align: center;
+        }
+        div{
+            background: rgb(83, 83, 83);
+            height: 400px;
+            width: 400px;
+            display: grid;
+            justify-items: center;
+            align-items: center ;
+            box-shadow: 0px 0px 30px;
+            padding-bottom: 30px;
+        }
+        h3{
+            font-family: arial;
+            color: white;
+            font-size: 1.5em;
+        }
+        button:nth-child(2){
+            background: none;
+            border: solid rgb(243, 69, 69) 4px ;
+            padding: 10px 30px;
+            border-radius:20px ;
+            width: 140px;
+            transition: 0.3s;
+            color: white;
+        }
+        button:nth-child(3){
+            background: none;
+            border: solid rgb(46, 175, 46) 4px ;
+            padding: 10px 30px;
+            border-radius:20px ;
+            width: 140px;
+            transition: 0.3s;
+            color: white;
+        }
+        button:nth-child(4){
+            background: none;
+            border: solid rgb(0, 192, 206) 4px ;
+            padding: 10px 30px;
+            border-radius:20px ;
+            width: 140px;
+            transition: 0.3s;
+            color: white;
+        }
+        button:nth-child(5){
+            background: none;
+            border: solid yellow 4px ;
+            padding: 10px 30px;
+            border-radius:20px ;
+            width: 140px;
+            transition: 0.3s;
+            color: white;
+        }
+        button:nth-child(2):hover{
+            
+            background-color: rgb(243, 69, 69);
+            color: white;
+            width: 220px;
+            filter: drop-shadow(0 0 30px rgb(243, 69, 69));
+        }
+        button:nth-child(3):hover{
+            
+            background-color: rgb(46, 175, 46);
+            color: white;
+            width: 220px;
+            filter: drop-shadow(0 0 30px rgb(46, 175, 46));
+        }
+        button:nth-child(4):hover{
+            
+            background-color: rgb(0, 192, 206);
+            color: white;
+            width: 220px;
+            filter: drop-shadow(0 0 30px rgb(0, 192, 206));
+        }
+        button:nth-child(5):hover{
+            
+            background-color: yellow;
+            color: white;
+            width: 220px;
+            filter: drop-shadow(0 0 30px yellow);
+        }
+       
+    
+    </style>
+</head>
+<body id="body">
+
+    <div>
+        <h3>Passe o mouse em cima para mudar de cor</h3>
+        
+        <button type="submit"  id="vermelho" onmouseover="vermelho()" >Vermelho</button>
+        <button type="submit"  id="verde"  onmouseover="verde()">Verde</button>
+        <button type="submit"  id="azul"  onmouseover="azul()">Azul</button>
+        <button type="submit"  id="amarelo"  onmouseover="amarelo()">Amarelo</button>
+
+    </div>
+
+
+    
+
+    <script>
+        function vermelho (){
+            document.querySelector("body").style.background = "rgb(243, 69, 69)"
+        }
+
+        function verde (){
+            document.querySelector("body").style.background = "rgb(46, 175, 46)"
+        }
+
+        function azul (){
+            document.querySelector("body").style.background = "rgb(0, 192, 206)"
+        }
+
+        function amarelo (){
+            document.querySelector("body").style.background = "yellow"
+        }
+    
+    
+    
+    
+    </script>
+
+
+</body>
+</html>

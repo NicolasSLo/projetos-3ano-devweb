@@ -1,0 +1,2 @@
+O "parseInt" corrige a tipo de variável para aplicar a soma no javaScript, e as aspas simples no " case '1' " e 
+" case '2' " são colocadas para corrigir o tipo de variável que a mesma está sendo lida como uma string.

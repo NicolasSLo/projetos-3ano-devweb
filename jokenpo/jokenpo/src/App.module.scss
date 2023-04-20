@@ -1,0 +1,325 @@
+.all {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.all2 {
+  margin-top: 20px;
+  display: grid;
+  row-gap: 35px;
+  text-align: center;
+}
+
+.pedra {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background: linear-gradient(55deg, rgb(146, 146, 146), rgb(63, 63, 63));
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: 4px solid black;
+  transition: 0.4s;
+  color: black;
+  font-weight: bold;
+}
+
+.papel {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background: linear-gradient(55deg, rgb(147, 215, 254), rgb(8, 57, 85));
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: 4px solid black;
+  transition: 0.4s;
+  color: black;
+  font-weight: bold;
+}
+
+.tesoura {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background: linear-gradient(55deg, rgb(151, 255, 147), rgb(16, 78, 14));
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: 4px solid black;
+  transition: 0.4s;
+  color: black;
+  font-weight: bold;
+}
+.pedra img,
+.papel img,
+.tesoura img {
+  filter: contrast(10);
+}
+
+.pedra,
+.papel,
+.tesoura {
+  box-shadow: 5px 5px 2px 0 rgba(0, 0, 0, 0.356);
+}
+
+.pedra:hover,
+.papel:hover,
+.tesoura:hover {
+  cursor: pointer;
+  animation: 0.4s aumentar forwards
+    /* Fowars é para ficar com a animação no estado final */
+  ;
+}
+
+.pedra:not( :hover),
+.papel:not( :hover),
+.tesoura:not( :hover) {
+  animation: 0.4s diminuir forwards;
+}
+
+h2 {
+  font-size: 3em;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.356);
+  color: rgb(255, 255, 255);
+  filter: drop-shadow(0 0 1px rgb(251, 0, 255));
+  animation: animarShadow 5s infinite ease ;
+}
+@keyframes animarShadow {
+  0%{
+    filter: drop-shadow(0 0 3px rgb(251, 0, 255));
+  }
+  50%{
+    filter: drop-shadow(0 0 20px rgb(251, 0, 255));
+  }
+  100%{
+    filter: drop-shadow(0 0 3px rgb(251, 0, 255));
+  }
+}
+.joken {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+
+.count {
+  display: grid;
+  text-align: left;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 20px;
+  padding: 8px 15px;
+  border-radius: 7px;
+  box-shadow: 5px 5px 2px 0 rgba(0, 0, 0, 0.356);
+  border: 1px solid rgba(255, 255, 255, 0.364);
+  // background: linear-gradient(55deg, rgb(99, 232, 190), rgba(55, 255, 0, 0.529));
+  backdrop-filter: blur(3px);
+  color: white;
+}
+button {
+  background: linear-gradient(55deg, rgb(255, 0, 0), rgb(122, 0, 0));
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 7px;
+  box-shadow: 5px 5px 2px 0 rgba(0, 0, 0, 0.356);
+  width: 200px;
+  transition: 0.4s;
+  justify-self: center;
+}
+
+.all2 button:hover {
+  cursor: pointer;
+  width: 300px;
+}
+
+.results {
+  display: grid;
+  // background: linear-gradient(55deg, rgb(99, 232, 190), rgba(55, 255, 0, 0.529));
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.364);
+  border-radius: 7px;
+  box-shadow: 5px 5px 2px 0 rgba(0, 0, 0, 0.356);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+  text-align: left;
+  padding: 8px 15px;
+  column-gap: 30px;
+}
+
+.results h1 {
+  color: white;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.356);
+}
+
+.alertRsult {
+  display: grid;
+}
+
+.alertRsult h1 {
+  position: fixed;
+  justify-self: center;
+}
+
+.ganhou {
+  color: green;
+  text-shadow:
+    -2px -2px 0px black,
+    -2px 2px 0px black,
+    2px -2px 0px black,
+    2px 2px 0px black;
+}
+
+.perdeu {
+  color: red;
+  text-shadow:
+    -2px -2px 0px black,
+    -2px 2px 0px black,
+    2px -2px 0px black,
+    2px 2px 0px black;
+
+}
+
+.empate {
+  color: orange;
+  text-shadow:
+    -2px -2px 0px black,
+    -2px 2px 0px black,
+    2px -2px 0px black,
+    2px 2px 0px black;
+}
+
+img {
+  height: 40px;
+  filter: invert(100);
+}
+
+@keyframes aumentar {
+  from {
+    transform: scale(100%);
+    box-shadow: 5px 5px 2px 0 rgba(0, 0, 0, 0.356);
+  }
+
+  to {
+    transform: scale(130%);
+    box-shadow: 30px 5px 2px -9px rgba(0, 0, 0, 0.356);
+    z-index: 1;
+  }
+}
+
+@keyframes diminuir {
+  from {
+    transform: scale(130%);
+    box-shadow: 30px 5px 2px -9px rgba(0, 0, 0, 0.356);
+    z-index: 1;
+  }
+
+  to {
+    transform: scale(100%);
+    box-shadow: 5px 5px 2px 0 rgba(0, 0, 0, 0.356);
+  }
+}
+
+// particles css
+
+$color-particle: #fff;
+$spacing: 2560px;
+$time-1: 60s;
+$time-2: 120s;
+$time-3: 180s;
+$time-4: 200s;
+
+/* mixins */
+@function particles($max) {
+  $val: 0px 0px $color-particle;
+  @for $i from 1 through $max {
+    $val: #{$val}, random($spacing)+px random($spacing)+px $color-particle;
+  }
+  @return $val;
+}
+
+@mixin particles($max) {
+  box-shadow: particles($max);
+  border-radius: 50%;
+}
+
+/* Styles */
+
+.animationwrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+.particle1, .particle2, .particle3, .particle4, .particle:after {
+  background: transparent;
+}
+
+.particle1:after, .particle2:after, .particle3:after, .particle4:after {
+  position: absolute;
+  content: "";
+  top: $spacing;
+}
+
+.particle1 {
+  animation: animParticle $time-1 linear infinite;
+  @include particles(1000);
+  height: 2px;
+  width: 2px;
+}
+
+.particle1:after {
+  @include particles(900);
+  height: 2px;
+  width: 2px;
+}
+
+.particle2 {
+  animation: animParticle $time-2 linear infinite;
+  @include particles(800);
+  height: 2px;
+  width: 2px;
+}
+
+.particle2:after {
+  @include particles(500);
+  height: 3px;
+  width: 3px;
+}
+
+.particle3:after {
+  @include particles(1100);
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+}
+
+.particle4 {
+  animation: animParticle $time-4 linear infinite;
+  @include particles(1200);
+  height: 1px;
+  width: 1px;
+}
+
+.particle4:after {
+  @include particles(700);
+  height: 1px;
+  width: 1px;
+}
+
+@keyframes animParticle {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY($spacing * -1);
+  }
+}

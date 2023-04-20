@@ -1,0 +1,109 @@
+body{
+    padding-top: 50px;
+    display: grid;
+    font-family: arial;
+    align-items:  center;
+    justify-items: center;
+    background: linear-gradient(to right, rgb(0, 0, 0), 25%, gray , 85%, black);
+}
+legend{
+    text-align: center;
+    color: white;
+    font-family: bold;
+    font-size: 1.3em ;
+    background: black;
+    padding: 10px;
+    border-radius: 100px;
+    font-family: arial;
+}
+::selection{
+    color: black;
+    background-color: #24a270;
+}
+
+
+
+.cadastro{
+    width: 450px;
+}
+.box{
+    
+    width: auto;
+    padding: 15px;
+    background-color: rgb(73, 79, 129);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    box-shadow: black 10px 10px 100px;
+    border-radius: 20px;
+    border: solid black 3px;
+}
+.field{
+    display: grid;
+    row-gap: 40px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    
+}
+.box_btn{
+    display: grid;
+    row-gap: 40px;
+    justify-items: center;
+}
+.elemento{
+    color: white;
+    display: grid;
+}
+.elemento input{
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    outline: 0;
+}
+#botao{
+    padding: 10px;
+    background: none;
+    border: solid #24a270 4px;
+    border-radius: 100px;
+    width: 300px;
+    color: white;
+    font-size: 1.3em;
+    transition: 0.3s;
+}
+#botao:hover{
+    cursor: pointer;
+    background-color: #24a270;
+    color: white;
+    width: 100%;
+   
+}
+.linha{
+    background: black ;
+    height: 3px;
+    border-radius: 10px;
+}
+
+.header_table{
+    background-color: black;
+}
+tr{
+    color: white;
+}
+th{
+    padding: 4px;
+}
+
+img:hover{
+    cursor: pointer;
+    background-color: black;
+    border-radius: 5px;
+}
+td{
+   text-align: center;
+}
+tbody tr:hover{
+    cursor: pointer;
+    background-color: #24a27056;
+}
+

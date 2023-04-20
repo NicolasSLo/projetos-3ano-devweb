@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+}
+body {
+    background: #1c1719;
+    display: grid;
+    padding: 15px;
+    justify-content: center;
+    font-size: 1.8em;
+    color: white;
+    width: 100%;
+    line-height: 2;
+    font-family: 'Handlee', cursive;
+}
+h1 {
+    color: #c30b90;
+}
+strong {
+    color: #51a2ff;
+}
+#div1 {
+    background: #2a2226;
+    padding: 0px 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#div2 {
+    background: #46393f;
+    padding: 0px 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
